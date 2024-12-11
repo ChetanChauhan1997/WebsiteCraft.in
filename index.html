@@ -8,6 +8,16 @@
 
   <meta name="description" content="">
   <meta name="author" content="">
+
+  <!-- Favicon start -->
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="WebsiteCraft" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <!-- Favicon End -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -49,7 +59,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-              <img src="assets/images/WEBSITECRAFT.png" alt="WebsiteCraft" height="100" class="p-2 ">
+              <img src="assets/images/WEBSITECRAFT.png" alt="WebsiteCraft" height="100" class=" " style="max-width:100px !important ;">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -60,7 +70,7 @@
               <li class="scroll-to-section"><a href="#portfolio">Our Portfolio</a></li>
               <!-- <li class="scroll-to-section"><a href="#contact">contact</a></li> -->
               <li>
-                <div class="gradient-button"><a id="" href="#contact"><i class="fa fa-sign-in-alt"></i> Contact
+                <div class="gradient-button"><a id="" href="#contactus"><i class="fa fa-sign-in-alt"></i> Contact
                     Us</a></div>
               </li>
             </ul>
@@ -366,7 +376,6 @@
               </div>
             </div>
           </section>
-
         </div>
       </div>
     </div>
@@ -448,7 +457,7 @@
     </div>
   </div>
 
-  <footer id="contact">
+  <footer id="contactus">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
@@ -514,7 +523,7 @@
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#portfolio">Our Portfolio</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#contactus">Contact Us</a></li>
             </ul>
             <!-- <ul>
               <li><a href="#">About</a></li>
@@ -610,6 +619,7 @@
 
 
 
+      // counter
       $('.timer').each(function () {
       var $this = $(this);
       var targetNumber = parseInt($this.attr('data-to'));
