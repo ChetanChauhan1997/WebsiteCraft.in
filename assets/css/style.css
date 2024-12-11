@@ -2088,7 +2088,8 @@ responsive
   }
 
   .main-banner .left-content p {
-    color: #afafaf;
+    color: black !important;!i;!;
+    /* color: black; */
     margin-right: 0;
   }
 
