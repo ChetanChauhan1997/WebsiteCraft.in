@@ -333,7 +333,7 @@
                 <!-- counter -->
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4 text-center">
                   <i class="fas fa-heart fs-2 mb-2"></i>
-                  <span class="timer counter d-block fw-bold" data-to="980" data-speed="7000">100</span>
+                  <span class="timer counter d-block fw-bold" data-to="100" data-speed="7000">100</span>
                   <p class="counter-title text-dark fw-bold">Happy Client</p>
                 </div>
                 <!-- end counter -->
@@ -342,7 +342,7 @@
                   <!-- <i class="fas fa-bag fs-2 mb-2"></i> -->
                   <i class="fas fa-clipboard-list fs-2 mb-2"></i>
                   <span id="anim-number-pizza" class="counter-number"></span>
-                  <span class="timer counter d-block fw-bold" data-to="2800" data-speed="7000">1500</span>
+                  <span class="timer counter d-block fw-bold" data-to="1500" data-speed="7000">1500</span>
                   <p class="counter-title text-dark fw-bold">Projects Completed</p>
                 </div>
                 <!-- end counter -->
@@ -350,7 +350,7 @@
                 <!-- counter -->
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4 text-center">
                   <i class="fas fa-user fs-2 mb-2"></i>
-                  <span class="timer counter d-block fw-bold" data-to="810" data-speed="7000">20</span>
+                  <span class="timer counter d-block fw-bold" data-to="20" data-speed="7000">20</span>
                   <p class="counter-title text-dark fw-bold">Expert Member</p>
                 </div>
                 <!-- end counter -->
@@ -606,6 +606,25 @@
           $(this).text(shortText);
         }
       );
+
+
+
+      $('.timer').each(function () {
+      var $this = $(this);
+      var targetNumber = parseInt($this.attr('data-to'));
+      var duration = parseInt($this.attr('data-speed'));
+
+      $({ countNum: 0 }).animate({ countNum: targetNumber }, {
+        duration: duration,
+        easing: 'linear',
+        step: function () {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function () {
+          $this.text(this.countNum);
+        }
+      });
+    });
     });
 
     
