@@ -386,28 +386,15 @@ header
 
 .header-area .main-nav .logo {
   float: left;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.header-area .main-nav .logo {
   line-height: 100px;
-  float: left;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  max-width: 100px !important;
 }
 
-.background-header .main-nav .logo {
-  line-height: 80px;
-}
 
-.background-header .main-nav .nav {
-  margin-top: 20px !important;
-}
 
 .header-area .main-nav .nav {
   float: right;
@@ -718,9 +705,7 @@ header
     margin-top: 80px !important;
   }
 
-  .header-area .main-nav .logo {
-    color: #1e1e1e;
-  }
+  
 
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -746,7 +731,8 @@ header
   }
 
   .header-area .logo {
-    margin-left: 30px;
+    margin-left: 35px;
+    max-width: 100px !important;
   }
 
   .header-area .menu-trigger {
@@ -1396,6 +1382,7 @@ The Clients
   bottom: 40px;
   right: 30px;
   z-index: 3;
+  max-width: 50px !important;
 }
 
 
