@@ -1043,11 +1043,11 @@ Services Style
 }
 
 .fourth-service .icon {
-  background-image: url(../images/service-icon-04.png);
+  background-image: url(../images/service-icon-02.png);
 }
 
 .fourth-service:hover .icon {
-  background-image: url(../images/service-icon-hover-04.png);
+  background-image: url(../images/service-icon-hover-02.png);
 }
 
 .service-item:hover {
@@ -1566,15 +1566,15 @@ footer .section-heading h4 {
   text-align: center;
 }
 
-footer #search {
+footer #contact {
   margin-bottom: 80px;
 }
 
-footer #search input::placeholder {
+footer #contact input::placeholder {
   color: #fff;
 }
 
-footer #search input {
+footer #contact input {
   font-size: 15px;
   color: #fff;
   outline: none;
@@ -1584,8 +1584,23 @@ footer #search input {
   border-bottom: 1px solid #fff;
   width: 100%;
 }
+footer #contact textarea {
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  height: 46px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+textarea::placeholder {
+  color:#fff;   
+  padding: 2px;       
+           
+}
 
-footer #search button {
+footer #contact button {
   height: 46px;
   border-radius: 23px;
   border: 1px solid #fff;
@@ -1595,7 +1610,7 @@ footer #search button {
   transition: all .5s;
 }
 
-footer #search button:hover {
+footer #contact button:hover {
   background-color: #fff;
   color: #4b8ef1;
 }
@@ -2060,7 +2075,7 @@ responsive
   footer .section-heading h4 {
     color: #2a2a2a;
   }
-  footer #search {
+  footer #contact {
     margin-bottom: 45px;
   }
   footer {
@@ -2078,7 +2093,7 @@ responsive
     margin-top: 45px;
     margin-bottom: 20px;
   }
-  footer #search input {
+  footer #contact input {
     border: 1px solid #eee;
     color: #afafaf;
     background-color: #fff;
@@ -2086,11 +2101,25 @@ responsive
     margin-bottom: 15px;
     padding: 0px 30px;
   }
-  footer #search button {
+  footer #contact textarea {
+    border: 1px solid #eee;
+    color: #afafaf;
+    background-color: #fff;
+    border-radius: 23px;
+    margin-bottom: 15px;
+    padding: 0px 30px;
+  }
+
+  textarea::placeholder {
+    color:#111;   
+    padding: 2px;       
+             
+  }
+  footer #contact button {
     background-color: #fff;
     color: #4b8ef1;
   }
-  footer #search input::placeholder { 
+  footer #contact input::placeholder { 
     color: #2a2a2a;
   }
   .header-area .main-nav .logo h4 {
